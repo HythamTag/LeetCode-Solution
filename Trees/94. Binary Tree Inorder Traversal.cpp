@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <stack>
 
 using namespace std;
 
@@ -12,19 +13,51 @@ struct TreeNode {
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
+// class Solution {
+//     vector<int> result;
+// public:
+//     vector<int> inorderTraversal(TreeNode* root) {
+//         inorder(root);
+//         return result;
+//     }
+// private:
+//     void inorder(TreeNode* node) {
+//         if (!node) return;
+//         inorder(node->left);
+//         result.push_back(node->val);
+//         inorder(node->right);
+//     }
+// };
+
 class Solution {
     vector<int> result;
+
 public:
     vector<int> inorderTraversal(TreeNode* root) {
-        inorder(root);
+
+        TreeNode* temp = root;
+
+        stack<TreeNode*> TreeStack;
+
+        while(!TreeStack.empty() || temp!= NULL)
+        {
+            while (temp!= NULL)
+            {
+                TreeStack.push(temp);
+                temp = temp->left;
+            }
+
+            temp = TreeStack.top();
+            TreeStack.pop();
+
+            result.push_back(temp->val);
+
+            temp = temp->right;
+
+        }
+
+
         return result;
-    }
-private:
-    void inorder(TreeNode* node) {
-        if (!node) return;
-        inorder(node->left);
-        result.push_back(node->val);
-        inorder(node->right);
     }
 };
 
@@ -49,3 +82,6 @@ int main() {
 
     return 0;
 }
+
+
+// https://neetcode.io/solutions/binary-tree-inorder-traversal
