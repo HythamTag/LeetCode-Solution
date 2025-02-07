@@ -23,8 +23,8 @@ struct TreeNode {
 // private:
 //     void inorder(TreeNode* node) {
 //         if (!node) return;
-//         inorder(node->left);
 //         result.push_back(node->val);
+//         inorder(node->left);
 //         inorder(node->right);
 //     }
 // };
