@@ -49,8 +49,8 @@ cmake_ninja_workdir = E$:/Courses/TO$ STUDY/C++$ STUDY/DATASTRUCTURES$ &$ ALGORI
 
 build cmake_object_order_depends_target_LeetCode_Challenges: phony || .
 
-build CMakeFiles/LeetCode_Challenges.dir/Algorithms/Insertion_Sort_List.cpp.obj: CXX_COMPILER__LeetCode_Challenges_unscanned_Debug E$:/Courses/TO$ STUDY/C++$ STUDY/DATASTRUCTURES$ &$ ALGORITHMES/Udemy$ -$ Mastering$ Data$ Structures$ &$ Algorithms$ using$ C$ and$ C++$ 2024-1/LeetCode$ Challenges/Algorithms/Insertion$ Sort$ List.cpp || cmake_object_order_depends_target_LeetCode_Challenges
-  DEP_FILE = CMakeFiles\LeetCode_Challenges.dir\Algorithms\Insertion_Sort_List.cpp.obj.d
+build CMakeFiles/LeetCode_Challenges.dir/Algorithms/145._Insertion_Sort_List.cpp.obj: CXX_COMPILER__LeetCode_Challenges_unscanned_Debug E$:/Courses/TO$ STUDY/C++$ STUDY/DATASTRUCTURES$ &$ ALGORITHMES/Udemy$ -$ Mastering$ Data$ Structures$ &$ Algorithms$ using$ C$ and$ C++$ 2024-1/LeetCode$ Challenges/Algorithms/145.$ Insertion$ Sort$ List.cpp || cmake_object_order_depends_target_LeetCode_Challenges
+  DEP_FILE = CMakeFiles\LeetCode_Challenges.dir\Algorithms\145._Insertion_Sort_List.cpp.obj.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\LeetCode_Challenges.dir
   OBJECT_FILE_DIR = CMakeFiles\LeetCode_Challenges.dir\Algorithms
@@ -63,7 +63,7 @@ build CMakeFiles/LeetCode_Challenges.dir/Algorithms/Insertion_Sort_List.cpp.obj:
 #############################################
 # Link the executable LeetCode_Challenges.exe
 
-build LeetCode_Challenges.exe: CXX_EXECUTABLE_LINKER__LeetCode_Challenges_Debug CMakeFiles/LeetCode_Challenges.dir/Algorithms/Insertion_Sort_List.cpp.obj
+build LeetCode_Challenges.exe: CXX_EXECUTABLE_LINKER__LeetCode_Challenges_Debug CMakeFiles/LeetCode_Challenges.dir/Algorithms/145._Insertion_Sort_List.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\LeetCode_Challenges.dir

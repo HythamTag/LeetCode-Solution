@@ -6,6 +6,6 @@ set(CMAKE_CXX_STANDARD 14)
 add_executable(LeetCode_Challenges
 #    "Trees/94. Binary Tree Inorder Traversal.cpp"
    #"144. Binary Tree Preorder Traversal.cpp"
-        "Algorithms/Insertion Sort List.cpp"
+        "Algorithms/145. Insertion Sort List.cpp"
 
 )
